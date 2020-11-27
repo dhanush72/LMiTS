@@ -171,13 +171,10 @@
   }
   /* Modern Feature Section Css */
   .feature-bg {
-    background: url("../images/feature-bg.png") no-repeat center left/45%;
+    background: url("../images/new_home.png") no-repeat center left/45%;
     height: 70vh;
   }
-  .both-bg {
-    background: url("../images/both-bg.png") no-repeat center right/45%;
-    height: 70vh;
-  }
+
   .dark-color {
     font-size: 16px;
     margin-bottom: 20px;
@@ -275,6 +272,7 @@
     font-size: 12px;
   }
   /*=== Career Page Section Css ===*/
+
   /*=== Privacy Page Section Css ===*/
   .privacy-banner {
     padding: 30px;
