@@ -382,7 +382,7 @@
     -ms-transform: translateX(110%);
     -o-transform: translateX(110%);
     transform: translateX(110%);
-    height: auto !important;
+    height: max-content !important;
     overflow: auto;
   }
   .show-menu.navbarNav {

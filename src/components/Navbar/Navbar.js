@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Logo from "../../assets/images/Logo.png";
-import data from "./data";
+import data from "../../Layouts/data";
 
 const classes = {
   navBtnClasses: {
@@ -15,7 +15,7 @@ const classes = {
   },
 };
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [navScroll, setNavScroll] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -69,28 +69,7 @@ const Navbar = () => {
                 : classes.navMenuClasses.navMenuHide
             }
           >
-            <ul className="navbar-nav">
-              {data.map(({ id, title, path }) => {
-                return (
-                  <li key={id} className="nav-item">
-                    <Link
-                      to={path}
-                      className="nav-link"
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      exact="true"
-                      offset={-80}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                );
-              })}
-              {/* <li>
-                <button className="btn btn-orange">Get Now</button>
-              </li> */}
-            </ul>
+            {props.children}
           </div>
         </div>
       </nav>
