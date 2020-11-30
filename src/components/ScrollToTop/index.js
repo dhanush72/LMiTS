@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const ScrollToToContainer = styled.div`
   position: fixed;
   bottom: 12px;
-  left: 85%;
+  left: 90%;
   text-align: center;
   cursor: pointer;
   width: 40px;
