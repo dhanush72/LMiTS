@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 import FAQ from "./pages/Faq";
+import PrivacyPolicy from "./pages/PrivacyPolicy/";
 
 function App() {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { AppLinks } from "./Banner-Data";
 
 const Banner = () => {
@@ -20,14 +19,15 @@ const Banner = () => {
 
               {AppLinks.map(({ id, icon, link }) => {
                 return (
-                  <Link
+                  <a
                     key={id}
-                    to="/"
-                    onClick={() => window.open({ link }, "_blank")}
+                    href={link}
                     className="img"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {icon}
-                  </Link>
+                  </a>
                 );
               })}
             </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
-import data from "../../Layouts/data";
 
 const classes = {
   navBtnClasses: {
@@ -29,6 +28,8 @@ const Navbar = (props) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+
+    return () => window.removeEventListener("scroll", changeBackground);
   }, [navScroll]);
 
   const toggleLinks = () => {
@@ -39,15 +40,7 @@ const Navbar = (props) => {
     <header className={navScroll ? "fixed" : ""}>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <Link
-            className="navbar-brand"
-            to="home"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
+          <Link className="navbar-brand" to="/">
             <img src={Logo} alt="LMiTS" className="img-fluid" />
           </Link>
           <button

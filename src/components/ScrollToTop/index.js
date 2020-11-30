@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const ScrollToToContainer = styled.div`
   position: fixed;
   bottom: 12px;
-  left: 90%;
+  left: 85%;
   text-align: center;
   cursor: pointer;
   width: 40px;
@@ -50,6 +50,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+
+    return () => window.removeEventListener("scroll", changeBackground);
   }, [visible]);
 
   return (

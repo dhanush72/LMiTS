@@ -1,4 +1,5 @@
 import React from "react";
+import { data } from "./About-Data";
 
 const About = () => {
   return (
@@ -10,13 +11,13 @@ const About = () => {
               <h2>
                 About <span>LMiTS</span>
               </h2>
-              <p className="dark-color">
-                Logistics is the process of planning and executing the efficient
-                transportation and storage of goods from the point of origin to
-                the point of consumption. The goal of LMiTS is to meet customer
-                requirements in a timely, cost-effective and ease of access with
-                us innovative technology.
-              </p>
+
+              {data.map(({ id, text, moreText }) => (
+                <p className="dark-color" key={id}>
+                  {text}
+                  {moreText}
+                </p>
+              ))}
             </div>
           </div>
         </div>

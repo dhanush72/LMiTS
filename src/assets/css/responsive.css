@@ -77,19 +77,12 @@
     font-size: 25px;
   }
   /* You Can Expect Section Css */
-  .who-spark-banner {
-    height: 80vh;
-  }
   .expect-content h5 {
     font-size: 20px;
   }
   /* Effective Features Section Css */
   .effective-content h5 {
     font-size: 20px;
-  }
-  /* Owl User Slider Section Css */
-  #sync2 .item .user-content h5 {
-    font-size: 22px;
   }
   /* Contact Form Us Section Css */
   .contact-content h5 {
@@ -104,36 +97,6 @@
     line-height: 60px;
   }
   /*=== Home Page Section Css ===*/
-  /*=== About Page Section Css ===*/
-  /* Author Section Css */
-  .author-content .sig-img {
-    width: 130px;
-  }
-  .author-content h5 {
-    font-size: 20px;
-  }
-  /* Investor Section Css */
-  .our-investiment-bg {
-    padding: 0 40px;
-  }
-  .investor-img {
-    max-width: 110px;
-    max-height: 110px;
-  }
-  .about-investor h5 {
-    font-size: 18px;
-  }
-  .investor-content {
-    padding: 20px 0 10px 0;
-  }
-  .spark-bg {
-    padding: 40px 60px 20px 60px;
-  }
-  /* Our Investor Partners Section Css */
-  .partner-content h5 {
-    font-size: 18px;
-  }
-  /*=== About Page Section Css ===*/
 }
 
 /* 1199px css */
@@ -211,67 +174,6 @@
     width: 180px;
   }
   /*=== Home Page Section Css ===*/
-  /*=== About Page Section Css ===*/
-  /* Who Spark Section Css */
-  .who-spark-banner {
-    /* background: url("../images/who-spark.png") no-repeat center right/70%; */
-  }
-  .who-spark-banner a {
-    font-size: 18px;
-  }
-  /* Our Author Section Css */
-  .author-content img {
-    max-width: 50px;
-  }
-  .author-bg {
-    margin-top: -135px;
-  }
-  .author-content h5 {
-    font-size: 18px;
-  }
-  .author-content .sig-img {
-    width: 110px;
-  }
-  /* Investor Section Css */
-  .our-investiment-bg::after {
-    width: 60px;
-    height: 60px;
-  }
-  .about-investor {
-    margin-left: 20px;
-  }
-  /* our Investor partner Section Css */
-  .partner-content h5 {
-    font-size: 16px;
-  }
-  .slider-nav2 {
-    margin: 30px 0;
-  }
-  /*=== About Page Section Css ===*/
-  /*=== Career Page Section Css ===*/
-  /* Oppoturnity Section Css */
-  .oppo-banner {
-    /* background: url("../images/oppo-bg.png") no-repeat center right/65%; */
-  }
-  .new-oppo-border {
-    margin: 0;
-    padding: 20px 20px 20px 20px;
-  }
-  /* Who We Loking Section Css */
-  .looking-bg {
-    margin-top: -115px;
-  }
-  /* Why Join Us Section Css */
-  .oppo-content h5 {
-    font-size: 15px;
-  }
-  .join-content h5 {
-    font-size: 17px;
-  }
-  .join-content p {
-    font-size: 12px;
-  }
-  /*=== Career Page Section Css ===*/
 
   /*=== Privacy Page Section Css ===*/
   .privacy-banner {
@@ -472,28 +374,7 @@
   .effetive-image {
     margin-top: 5px;
   }
-  /* How We are Work Section Css */
-  .video-popup-button {
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
-    top: 55%;
-  }
-  .video-popup-button img {
-    max-width: 20px;
-  }
-  /* Owl User Slider Section Css */
-  .slider-nav button.owl-prev {
-    top: 65%;
-    left: 6%;
-  }
-  .slider-nav button.owl-next {
-    top: 65%;
-    right: 6%;
-  }
-  #sync2 .item .user-content {
-    padding: 10px 10px;
-  }
+
   /* Contact Section Css */
   .contact-image {
     width: 60px;
@@ -514,7 +395,7 @@
   .footer-icon li a {
     width: 40px;
     height: 40px;
-    line-height: 43px;
+    line-height: 40px;
     font-size: 20px;
   }
   .footer-content li {
@@ -524,40 +405,11 @@
     font-size: 14px;
   }
   /*=== Home Page Section Css ===*/
-  /*=== About Page Section Css ===*/
-  /* Who Spark Section Css */
-  .who-spark-banner {
-    height: 70vh;
-  }
+
   /* Our Author Section Css */
   .head h2 br {
     display: none;
   }
-  /* Investor Section Css */
-  .about-ivest {
-    margin-top: 0px;
-  }
-  .about-ivest h2 {
-    text-align: center;
-  }
-  .our-investiment-bg::after {
-    left: -5.4%;
-  }
-  .slider-nav1 {
-    margin: 40px 0;
-    text-align: center;
-  }
-  .spark-bg {
-    padding: 40px 30px 20px 30px;
-  }
-  .spark-content h3 {
-    font-size: 20px;
-  }
-  /* Our Investemnt Partner Css */
-  .partner-content h5 {
-    font-size: 13px;
-  }
-  /*=== About Page Section Css ===*/
 
   /*=== FAQ Page Section Css ===*/
   .faq-banner {
@@ -636,36 +488,6 @@
     margin-left: -50px;
   }
   /*=== Home Page Section Css ===*/
-  /*=== About Page Section Css ===*/
-  /* Who Spark Section Css */
-  .who {
-    margin: 0px 0 100px 0;
-  }
-  .who-spark-banner {
-    height: 100%;
-    /* background: url("../images/who-spark.png") no-repeat center right/91%; */
-  }
-  .line-img {
-    max-width: 80px;
-    margin-top: -20px;
-  }
-  .who-spark-banner a {
-    font-size: 16px;
-  }
-
-  .spark {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .btn-blue {
-    margin-top: 10px;
-  }
-  /* Who Are Looking Section Css */
-  .looking-bg {
-    margin-top: -95px;
-    padding: 30px;
-  }
 
   /*=== Privacy Page Section Css ===*/
   .policy-content {
@@ -706,7 +528,6 @@
   .main-heading h1 {
     font-size: 30px;
   }
-  /* You Can Expect Section Css */
   /* Modern Feature Section Css */
   .feature-bg {
     background: transparent;
@@ -800,8 +621,8 @@
     line-height: 50px;
   }
   .contact-us .media:nth-child(2) {
-    margin-left: 0px;
-    margin-top: 20px;
+    margin-left: 10px;
+    /* margin-top: 20px; */
   }
   .contact-us {
     margin-bottom: 20px;
