@@ -264,6 +264,7 @@ a.nav-link img {
   margin-bottom: 0px;
   text-align: center;
   transition: 0.5s all ease;
+  position: relative;
 }
 
 .expect-content-bg:hover {
@@ -303,6 +304,18 @@ a.nav-link img {
 .head h2 span {
   background-color: #ffbd3b;
   padding: 0 5px;
+}
+
+.line-img {
+  max-width: 100px;
+}
+
+.head .about-read-more {
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffbd3b;
+  display: block;
+  transition: all 0.8s 0.2s ease-in-out;
 }
 
 /* Features */
@@ -356,9 +369,6 @@ a.nav-link img {
 .effective-image {
   position: relative;
   margin-top: 40px;
-}
-
-.effective-image {
   transition: all 0.6s ease-in-out;
 }
 
@@ -378,6 +388,13 @@ a.nav-link img {
 }
 
 /* Contact */
+.contact-bg {
+  background: url("./assets/images/contact-bg.png") no-repeat center
+    center/contain;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .contact-head img {
   margin-bottom: 50px;
 }
@@ -524,8 +541,11 @@ a.nav-link img {
 
 /* Footer */
 footer {
+  background-image: url(./assets/images/Footer-top.png);
+  background-repeat: no-repeat;
+  background-position: top center;
   background-color: #362a50;
-  padding: 50px 0 5px 0;
+  padding: 150px 0 50px 0;
 }
 
 footer img {

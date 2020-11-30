@@ -30,7 +30,7 @@ const Contact = () => {
     alert("Email Sent");
   };
   return (
-    <section id="contact">
+    <section className="contact-bg" id="contact">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-sm-10 contact-border">
