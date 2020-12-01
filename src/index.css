@@ -212,6 +212,9 @@ a.nav-link img {
 
 .home-icon p span {
   font-weight: 600;
+  font-size: 14px;
+  background: rgba(89, 58, 227, 0.1);
+  padding: 5px;
 }
 
 .home-icon {
@@ -372,10 +375,6 @@ a.nav-link img {
   transition: all 0.6s ease-in-out;
 }
 
-.effective-image:hover {
-  transform: scale(1.1);
-}
-
 .effective-image::after {
   position: absolute;
   content: "";
@@ -464,7 +463,8 @@ a.nav-link img {
   border: 1px solid #f4f5f7;
   padding: 5px 20px 10px 20px;
   position: relative;
-  border-radius: 50px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   margin-bottom: 20px;
 }
 
@@ -487,6 +487,7 @@ a.nav-link img {
 
 .text-area {
   border-radius: 10px;
+  border-top-left-radius: 0;
 }
 
 .text-area textarea {
@@ -731,4 +732,228 @@ footer span {
 .faq-privacy {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* Animation */
+.animation-4 span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: #ffbd3b;
+  display: block;
+  border-radius: 50%;
+}
+.animation-4 span:nth-child(1) {
+  top: 0;
+  bottom: auto;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+@-webkit-keyframes a {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes a {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.animation-4 span:nth-child(2) {
+  top: 0;
+  bottom: auto;
+  width: 50px;
+  height: 50px;
+  left: auto;
+  right: 0;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+.animation-4 span:nth-child(3) {
+  top: 0;
+  bottom: auto;
+  width: 50px;
+  height: 50px;
+  left: 20%;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+.animation-4 span:nth-child(4) {
+  bottom: 65%;
+  width: 50px;
+  height: 50px;
+  left: 42%;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+.animation-4 span:nth-child(5) {
+  left: auto;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+.animation-4 span:nth-child(6) {
+  bottom: 15%;
+  width: 50px;
+  height: 50px;
+  left: 49%;
+  -webkit-animation: a 10s linear infinite;
+  animation: a 10s linear infinite;
+}
+.animation-4 span:nth-child(7) {
+  left: auto;
+  right: 30%;
+  bottom: auto;
+  top: 10%;
+  -webkit-animation: b 30s linear infinite;
+  animation: b 30s linear infinite;
+}
+@-webkit-keyframes b {
+  0% {
+    right: 30%;
+  }
+  40% {
+    right: 50%;
+    top: 20%;
+  }
+  60% {
+    right: 70%;
+    top: 10%;
+  }
+  80% {
+    right: 40%;
+    top: 5%;
+  }
+  100% {
+    right: 30%;
+  }
+}
+@keyframes b {
+  0% {
+    right: 30%;
+  }
+  40% {
+    right: 50%;
+    top: 20%;
+  }
+  60% {
+    right: 70%;
+    top: 10%;
+  }
+  80% {
+    right: 40%;
+    top: 5%;
+  }
+  100% {
+    right: 30%;
+  }
+}
+.animation-4 span:nth-child(8) {
+  left: auto;
+  right: 22%;
+  bottom: 9%;
+  -webkit-animation: c 30s linear infinite;
+  animation: c 30s linear infinite;
+}
+@-webkit-keyframes c {
+  0% {
+    right: 22%;
+    bottom: 9%;
+  }
+  50% {
+    right: 42%;
+    bottom: 0%;
+  }
+  100% {
+    right: 22%;
+    bottom: 9%;
+  }
+}
+@keyframes c {
+  0% {
+    right: 22%;
+    bottom: 9%;
+  }
+  50% {
+    right: 42%;
+    bottom: 0%;
+  }
+  100% {
+    right: 22%;
+    bottom: 9%;
+  }
+}
+.animation-4 span:nth-child(9) {
+  left: 10%;
+  bottom: 10%;
+  -webkit-animation: d 30s linear infinite;
+  animation: d 30s linear infinite;
+}
+@-webkit-keyframes d {
+  0% {
+    left: 10%;
+    bottom: 10%;
+  }
+  40% {
+    left: 40%;
+    bottom: 40%;
+  }
+  50% {
+    left: 60%;
+    bottom: 20%;
+  }
+  100% {
+    left: 10%;
+    bottom: 10%;
+  }
+}
+@keyframes d {
+  0% {
+    left: 10%;
+    bottom: 10%;
+  }
+  40% {
+    left: 40%;
+    bottom: 40%;
+  }
+  50% {
+    left: 60%;
+    bottom: 20%;
+  }
+  100% {
+    left: 10%;
+    bottom: 10%;
+  }
+}
+
+.animation-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

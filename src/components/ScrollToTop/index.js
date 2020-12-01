@@ -7,16 +7,18 @@ import { useEffect } from "react";
 
 const ScrollToToContainer = styled.div`
   position: fixed;
-  bottom: 12px;
-  left: 90%;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
   text-align: center;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ffbd3b;
+  background-color: #ffbd3b;
   color: #fff;
-  z-index: 1;
+  border-radius: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
 `;
 
 const ScrollToToIcon = styled(MdKeyboardArrowUp)`

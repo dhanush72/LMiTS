@@ -8,6 +8,7 @@ const Service = () => {
         <div className="heading text-center">
           <h2 className="mt-0">Our Service</h2>
         </div>
+
         <div className="row justify-content-center">
           {data.map(({ id, icon, alt, title, subtitle }) => (
             <div className="col-lg-4 col-md-6 col-sm-10" key={id}>

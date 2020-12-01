@@ -6,6 +6,48 @@ import { GoLocation } from "react-icons/go";
 import { FaUserAlt } from "react-icons/fa";
 import { MdSubject } from "react-icons/md";
 import emailjs from "emailjs-com";
+import styled from "styled-components";
+
+const Button = styled.button`
+  display: inline-block;
+  background-color: #ffbd3b;
+  padding: 12px 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    content: "";
+    background-color: #362a50;
+    z-index: -1;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+`;
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -127,7 +169,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="btn contact-btn">Send Message</button>
+                <Button className="btn">Send Message</Button>
               </form>
             </div>
           </div>

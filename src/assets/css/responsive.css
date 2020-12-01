@@ -443,6 +443,18 @@
     padding: 80px 0;
     background: url("../images/home-banner.png") no-repeat center right/75%;
   }
+  .banner-content {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    text-align: center;
+    background: hsla(0, 0%, 100%, 0.3);
+    box-shadow: 0 20px 40px 0 rgba(43, 35, 79, 0.08);
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .home-icon p span {
+    display: none;
+  }
   .main-heading h1 {
     font-size: 35px;
     margin-bottom: 0;
@@ -524,6 +536,15 @@
   /*=== Home Page Section Css ===*/
   .home-banner {
     background: url("../images/home-banner.png") no-repeat center right/80%;
+  }
+  .banner-content {
+    max-width: 400px;
+    margin: 0 auto 50px;
+    text-align: center;
+    background: hsla(0, 0%, 100%, 0.3);
+    box-shadow: 0 20px 40px 0 rgba(43, 35, 79, 0.08);
+    padding: 25px;
+    border-radius: 10px;
   }
   .main-heading h1 {
     font-size: 30px;

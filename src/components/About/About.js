@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { data } from "./About-Data";
-import { Link } from "react-router-dom";
-import Line from "../../assets/images/line.png";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);

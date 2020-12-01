@@ -6,7 +6,7 @@ const Banner = () => {
     <section className="home-banner" id="home">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-5">
+          <div className="col-md-5 banner-content">
             <div className="main-heading">
               <h1>
                 Sending <span>Simplified</span>
@@ -33,6 +33,17 @@ const Banner = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="animation-4">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </section>
   );
