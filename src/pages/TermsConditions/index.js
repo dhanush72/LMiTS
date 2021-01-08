@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import Layout2 from "../../Layouts/Layout2";
-import PrivacyContent from "./PrivacyContent";
+import TCContent from "./TermsConditions";
 
-const PrivacyPolicy = () => {
+const TermsConditions = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <Layout2>
-      <PrivacyContent />
+      <TCContent />
     </Layout2>
   );
 };
 
-export default PrivacyPolicy;
+export default TermsConditions;

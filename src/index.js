@@ -9,7 +9,6 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {console.count()}
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { data } from "./About-Data";
+import React from "react";
+import { aboutLMiTS, features } from "./About-Data";
 
 const About = () => {
-  const [readMore, setReadMore] = useState(false);
   return (
     <section className="d-margin feature-bg" id="about">
       <div className="container">
@@ -13,32 +12,20 @@ const About = () => {
                 About <span>LMiTS</span>
               </h2>
 
-              {data.map(({ id, text, moreText }) => (
+              {aboutLMiTS.map(({ id, text }) => (
                 <p className="dark-color" key={id}>
                   {text}
                 </p>
               ))}
-
-              {readMore && (
-                <p className="dark-color">
-                  The era of technological innovation has revolutionized the way
-                  the world use to function. It has impacted every other
-                  industry we know and is helping to transform them at an
-                  unprecedented rate. The logistics sector has also been
-                  disrupted by this technological transformation as it is not
-                  only helping in reducing the friction in the world of
-                  logistics but is also making it a more efficient and automated
-                  process.
-                </p>
-              )}
-
-              <h5
-                className="about-read-more"
-                onClick={() => setReadMore(!readMore)}
-              >
-                {readMore ? "Read less" : "Read more"}
-              </h5>
             </div>
+            {features.map((data, index) => (
+              <div className="media align-items-center mb-2" key={index}>
+                <div className="about-image">{data.icon}</div>
+                <div className="media-body contact-content">
+                  <p className="mb-0">{data.text}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

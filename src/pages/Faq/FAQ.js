@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FaqHeader from "./Faq-header";
 import FaqBody from "./Faq-body";
 import { data } from "./data";
 
 const FAQ = () => {
   const [questions, setQuesions] = useState(data);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <FaqHeader />
