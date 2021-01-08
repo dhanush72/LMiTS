@@ -13,7 +13,7 @@ export const FooterLinks = [
   },
   {
     id: 3,
-    title: "Terms&Conditions",
+    title: "Terms & Conditions",
     path: "/termsconditions",
   },
 ];
