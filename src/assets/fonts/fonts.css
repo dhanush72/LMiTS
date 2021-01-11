@@ -36,7 +36,8 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype"),
+    url("../fonts/Gilroy-Medium/Gilroy-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -82,8 +83,6 @@
   src: url("../fonts/SamsungSharpSans-Bold/SamsungSharpSans-Bold.eot");
   src: url("../fonts/SamsungSharpSans-Bold/SamsungSharpSans-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/SamsungSharpSans-Bold/SamsungSharpSans-Bold.woff2")
-      format("woff2"),
     url("../fonts/SamsungSharpSans-Bold/SamsungSharpSans-Bold.woff")
       format("woff"),
     url("../fonts/SamsungSharpSans-Bold/SamsungSharpSans-Bold.ttf")
