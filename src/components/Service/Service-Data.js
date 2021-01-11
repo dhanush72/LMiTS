@@ -12,6 +12,7 @@ export const data = [
   {
     id: 2,
     icon: Courier,
+    alt: "Courier Icon",
     title: "Courier Icon",
     subtitle:
       "Door to Door pickup & delivery services to selected postal codes across India.",

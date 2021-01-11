@@ -8,9 +8,9 @@ const About = () => {
         <div className="row justify-content-end">
           <div className="col-lg-6 col-sm-7">
             <div className="heading head">
-              <h2>
+              <h1>
                 About <span>LMiTS</span>
-              </h2>
+              </h1>
 
               {aboutLMiTS.map(({ id, text }) => (
                 <p className="dark-color" key={id}>

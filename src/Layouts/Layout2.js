@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { others } from "./data";
 import { Navbar } from "../components/Navbar/Navbar";
+import { Footer } from "../components/Footer/Footer";
 
 const Layout2 = (props) => {
   return (
@@ -20,6 +21,8 @@ const Layout2 = (props) => {
         </ul>
       </Navbar>
       <div>{props.children}</div>
+
+      <Footer />
     </>
   );
 };
