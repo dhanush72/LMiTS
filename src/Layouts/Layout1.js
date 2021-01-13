@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { home } from "./data";
 import { Navbar } from "../components/Navbar/Navbar";
 
-const Layout1 = (props) => {
+const Layout1 = ({ children }) => {
   return (
     <>
       <Navbar>
@@ -25,12 +25,25 @@ const Layout1 = (props) => {
               </li>
             );
           })}
+          <li className="nav-item">
+            <a
+              href="http://13.235.63.108:3002/"
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bulk Orders
+            </a>
+          </li>
+
           {/* <li>
-            <button className="btn btn-orange">Get Now</button>
+            <a href="http://bulk.lmits.in/" target="_blank" rel="noreferrer">
+              <button className="btn btn-orange">Bulk Orders</button>
+            </a>
           </li> */}
         </ul>
       </Navbar>
-      <div>{props.children}</div>
+      <div>{children}</div>
     </>
   );
 };

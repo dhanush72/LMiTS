@@ -19,7 +19,6 @@ const Features = () => {
                   </div>
                   <div className="effective-content">
                     <h5>{title}</h5>
-                    <p>{subtitle}</p>
                   </div>
                 </div>
               );
@@ -37,7 +36,6 @@ const Features = () => {
                   </div>
                   <div className="effective-content">
                     <h5>{title}</h5>
-                    <p>{subtitle}</p>
                   </div>
                 </div>
               );

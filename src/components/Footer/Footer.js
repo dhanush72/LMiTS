@@ -8,6 +8,8 @@ const toggleHome = () => {
   scroll.scrollToTop();
 };
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer>
@@ -49,7 +51,7 @@ const Footer = () => {
         <hr />
         <p className="text-center mb-2">
           Copyright &copy; All Right Reserved{" "}
-          <span>LMiTS Solutions Pvt Ltd. 2020 </span>
+          <span>LMiTS Solutions Pvt Ltd. {year} </span>
         </p>
       </div>
     </footer>

@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="col-lg-6 col-sm-10 contact-border">
             <div className="heading head contact-head">
               <h2 className="mt-0">
-                Have any queries? Please Feel Free Contact Us.
+                Have any queries? Please feel free to contact Us.
               </h2>
               <img src={Line} alt="Line" className="img-fluid" />
             </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                     name="name"
                     required
                     className="form-control"
-                    placeholder="Your Full Name"
+                    placeholder="Name"
                   />
                 </div>
 
@@ -145,7 +145,7 @@ const Contact = () => {
                     name="email"
                     required
                     className="form-control"
-                    placeholder="Your Email"
+                    placeholder="Email"
                   />
                 </div>
 
