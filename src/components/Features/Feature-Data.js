@@ -34,8 +34,8 @@ export const FeatureThreeFour = [
   {
     id: 2,
     img: Featured4,
-    alt: "Compare price",
-    title: "Compare price",
+    alt: "Best price",
+    title: "Best price",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi, corrupti!",
   },
