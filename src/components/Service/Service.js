@@ -6,7 +6,7 @@ const Service = () => {
     <section className="expect-bg" id="service">
       <div className="container">
         <div className="heading text-center">
-          <h2 className="mt-0">Our Service</h2>
+          <h2 className="mt-0">Our Services</h2>
         </div>
 
         <div className="row justify-content-center">

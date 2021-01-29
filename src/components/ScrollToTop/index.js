@@ -26,6 +26,8 @@ const ScrollToToIcon = styled(MdKeyboardArrowUp)`
   font-size: 28px;
 
   &:hover {
+    color: #fff;
+    background-color: #ffbd3b;
     animation: scrollTop 0.5s alternate ease infinite;
   }
 

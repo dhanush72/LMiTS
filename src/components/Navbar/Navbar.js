@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
 
@@ -26,6 +27,10 @@ const Navbar = (props) => {
     }
   };
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
 
@@ -40,7 +45,7 @@ const Navbar = (props) => {
     <header className={navScroll ? "fixed" : ""}>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="" onClick={toggleHome}>
             <img src={Logo} alt="LMiTS" className="img-fluid" />
           </Link>
           <button

@@ -7,6 +7,9 @@ import { FaUserAlt } from "react-icons/fa";
 import { MdSubject } from "react-icons/md";
 import emailjs from "emailjs-com";
 import styled from "styled-components";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const Button = styled.button`
   display: inline-block;
@@ -50,9 +53,18 @@ const Button = styled.button`
 `;
 
 const Contact = () => {
+  const [alertSubmit, setAlertSubmit] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (alertSubmit) {
+      ref.current.focus();
+    }
+  }, [alertSubmit]);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setAlertSubmit(true);
     emailjs
       .sendForm(
         "gmail",
@@ -60,16 +72,18 @@ const Contact = () => {
         e.target,
         "user_2ewtaC4WpwtPJYAIvG2vP"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then(() => {
+        const interval = setTimeout(() => {
+          setAlertSubmit(false);
+        }, 3000);
+
+        return () => clearInterval(interval);
+      })
+      .catch(() => {
+        setAlertSubmit(true);
+      });
     e.target.reset();
-    alert("Email Sent");
+    // alert("Email Sent");
   };
   return (
     <section className="contact-bg" id="contact">
@@ -127,6 +141,14 @@ const Contact = () => {
           <div className="col-lg-6 col-sm-10">
             <div className="contact-form">
               <form onSubmit={sendEmail}>
+                {alertSubmit && (
+                  <div className="alert alert-success" ref={ref} tabIndex="-1">
+                    <span>
+                      your query submitted. our team will be in touch with you
+                      shortly
+                    </span>
+                  </div>
+                )}
                 <div className="input-group contact-form-bg">
                   <FaUserAlt />
                   <input

@@ -15,8 +15,8 @@ const TCContent = () => {
       <section className="faq-priacy">
         <div className="container">
           <div className="privacy-content">
-            {data.generalTerms.map(({ title, content }) => (
-              <div>
+            {data.generalTerms.map(({ title, content }, index) => (
+              <div key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -27,8 +27,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.definitionsAndkeyterms.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.definitionsAndkeyterms.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -39,8 +39,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.license.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.license.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -51,8 +51,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.restrictions.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.restrictions.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -63,8 +63,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.returnRefund.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.returnRefund.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -75,8 +75,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.suggestions.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.suggestions.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -87,8 +87,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.consent.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.consent.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -99,8 +99,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.linksToOther.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.linksToOther.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -111,8 +111,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.cookies.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.cookies.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -123,8 +123,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.changeToOurTeam.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.changeToOurTeam.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -135,8 +135,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.modifications.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.modifications.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -147,8 +147,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.updatesToWebsite.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.updatesToWebsite.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -159,8 +159,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.thirdPartyServices.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.thirdPartyServices.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -171,8 +171,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.termTermination.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.termTermination.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -183,8 +183,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.copyrightInfringement.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.copyrightInfringement.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -195,8 +195,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.indemnification.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.indemnification.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -207,8 +207,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.noWarranties.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.noWarranties.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -219,8 +219,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.limitationOfLiability.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.limitationOfLiability.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -231,8 +231,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.severability.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.severability.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -243,8 +243,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.waiver.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.waiver.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -255,8 +255,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.amendments.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.amendments.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -267,8 +267,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.updatesToOurTerms.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.updatesToOurTerms.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -279,8 +279,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.intellectualProperty.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.intellectualProperty.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -291,8 +291,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.agreementToArbitrate.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.agreementToArbitrate.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -303,8 +303,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.noticeOfDispute.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.noticeOfDispute.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -315,8 +315,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.bindingArbitration.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.bindingArbitration.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -327,8 +327,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.submissionsAndPrivacy.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.submissionsAndPrivacy.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -339,8 +339,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.promotions.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.promotions.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -351,8 +351,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.typographicalErrors.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.typographicalErrors.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -363,8 +363,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.miscellaneous.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.miscellaneous.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -375,8 +375,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.disclaimer.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.disclaimer.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
@@ -387,8 +387,8 @@ const TCContent = () => {
               </div>
             ))}
 
-            {data.contactUs.map(({ title, content }) => (
-              <div className="mt-5">
+            {data.contactUs.map(({ title, content }, index) => (
+              <div className="mt-5" key={index}>
                 <h5>{title}</h5>
                 <p>{content.text}</p>
                 {content.map(({ text }, index) => (
