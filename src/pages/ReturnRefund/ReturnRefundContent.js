@@ -7,7 +7,7 @@ const ReturnRefundContent = () => {
       <section className="privacy-banner">
         <div className="container">
           <div className="main-heading spark-head text-center">
-            <h1 className="mb-0">Return & Refund Policy</h1>
+            <h1 className="mb-0">Cancellation & Refund Policy</h1>
           </div>
         </div>
       </section>

@@ -18,7 +18,7 @@ export const FooterLinks = [
   },
   {
     id: 4,
-    title: "Return & Refund",
+    title: "Cancellation & Refund Policy",
     path: "/return-refund",
   },
 ];
