@@ -4,7 +4,6 @@ import {
   Service,
   About,
   Features,
-  Counter,
   Contact,
   Footer,
 } from "../components";

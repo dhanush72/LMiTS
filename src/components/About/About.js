@@ -9,7 +9,7 @@ const About = () => {
           <div className="col-lg-6 col-sm-7">
             <div className="heading head">
               <h1>
-                About <span>LMiTS</span>
+                About <span>fleeta</span>
               </h1>
 
               {aboutLMiTS.map(({ id, text }) => (

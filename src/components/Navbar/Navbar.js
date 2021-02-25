@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/Logo.png";
+import FleetaDark from "../../assets/images/fleeta_logo.svg";
+import FleetaWhite from "../../assets/images/footer_fleeta.svg";
 
 const classes = {
   navBtnClasses: {
     navBtnShow: "navbar-toggler collapsed show-menu navbar-toggler",
-    navBtnClose: "navbar-toggler",
+    navBtnClose: "navbar-toggler ",
   },
   navMenuClasses: {
     navMenuShow:
@@ -46,7 +47,11 @@ const Navbar = (props) => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link className="navbar-brand" to="" onClick={toggleHome}>
-            <img src={Logo} alt="LMiTS" className="img-fluid" />
+            {navScroll ? (
+              <img src={FleetaWhite} alt="LMiTS" className="img-fluid" />
+            ) : (
+              <img src={FleetaDark} alt="LMiTS" className="img-fluid" />
+            )}
           </Link>
           <button
             type="button"

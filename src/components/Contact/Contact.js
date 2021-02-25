@@ -105,7 +105,7 @@ const Contact = () => {
                 <div className="media-body contact-content">
                   <h5>Email Address</h5>
                   <h6>
-                    <a href="mailto:support@lmits.in">support@lmits.in</a>
+                    <a href="mailto:support@fleeta.in">support@fleeta.in</a>
                   </h6>
                 </div>
               </div>

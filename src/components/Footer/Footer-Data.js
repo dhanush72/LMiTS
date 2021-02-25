@@ -1,11 +1,11 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export const FooterLinks = [
-  // {
-  //   id: 1,
-  //   title: "FAQ",
-  //   path: "/faq",
-  // },
+  {
+    id: 1,
+    title: "FAQs",
+    path: "/faq",
+  },
   {
     id: 2,
     title: "Privacy Policy",
@@ -15,6 +15,11 @@ export const FooterLinks = [
     id: 3,
     title: "Terms & Conditions",
     path: "/termsconditions",
+  },
+  {
+    id: 4,
+    title: "Return & Refund",
+    path: "/return-refund",
   },
 ];
 

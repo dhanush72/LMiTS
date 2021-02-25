@@ -6,7 +6,7 @@ export const aboutLMiTS = [
   {
     id: 1,
     text: `
-    LMITS is an online marketplace for intercity and intracity courier delivery platform. We're dedicated to giving you the very best of courier and hyperlocal vendors, with a focus on
+    Fleeta is an online marketplace for intercity and intracity courier delivery platform. We're dedicated to giving you the very best of courier and hyperlocal vendors, with a focus on
       `,
   },
 ];
@@ -23,6 +23,6 @@ export const features = [
   },
   {
     icon: <AiOutlineMobile />,
-    text: "Book & manage your service directly from LMiTS App",
+    text: "Book & manage your service directly from fleeta App",
   },
 ];

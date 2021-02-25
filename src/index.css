@@ -136,9 +136,13 @@ header {
 
 header.fixed {
   padding: 12px 0;
-  background-color: #fff;
+  background-color: #593ae3;
   transition: all 0.5s;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+header.fixed .navbar-nav .nav-item > .nav-link {
+  color: #ffbd3b;
 }
 
 header .navbar-brand {
@@ -165,7 +169,11 @@ li.nav-item .nav-link:hover {
   text-decoration: underline;
 }
 
-.navbar-nav .nav-item > .nav-link.active {
+header.fixed .navbar-nav .nav-item > .nav-link {
+  color: #fff;
+}
+
+header.fixed .navbar-nav .nav-item > .nav-link.active {
   color: #ffbd3b;
   font-weight: 600;
 }
@@ -184,7 +192,7 @@ li.nav-item:hover .nav-link {
 }
 
 .navbar-brand {
-  width: 80px;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -194,7 +202,7 @@ a.nav-link img {
 
 /* Banner */
 .home-banner {
-  background: url("./assets/images/home-banner.png") no-repeat top right/50%;
+  background: url("./assets/images/fleeta-banner.png") no-repeat top right/50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,7 +405,7 @@ a.nav-link img {
 
 /* Counter */
 .lmits-bg {
-  background: url() no-repeat top left/20%, url() no-repeat bottom center/20%;
+  /* background: url() no-repeat top left/20%, url() no-repeat bottom center/20%; */
   background-color: #362a50;
   padding: 50px 60px 20px 60px;
   margin-bottom: 10px;
@@ -595,9 +603,13 @@ footer .navbar-brand {
   width: 120px;
 }
 
+.footer-content {
+  padding-left: 0;
+}
+
 .footer-content li {
   list-style: none;
-  padding: 0 20px;
+  padding: 0 10px;
   display: inline-block;
   margin-top: 10px;
 }

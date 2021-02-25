@@ -1,8 +1,8 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
-import FooterLogo from "../../assets/images/footer_logo.png";
-import { SocialLinks, FooterLinks } from "./Footer-Data";
+import FooterLogo from "../../assets/images/footer_fleeta.svg";
+import { FooterLinks } from "./Footer-Data";
 
 const toggleHome = () => {
   scroll.scrollToTop();
@@ -15,7 +15,13 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-sm-4">
+          <div className="col-md-6 col-sm-5 footer-navbar-brand">
+            <Link to="" className="navbar-brand" onClick={toggleHome}>
+              <img src={FooterLogo} alt="" className="img-fluid" />
+            </Link>
+          </div>
+
+          <div className="col-md-6 col-sm-6 text-right">
             <ul className="footer-content">
               {FooterLinks.map(({ id, title, path }) => {
                 return (
@@ -27,13 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-sm-4 text-center">
-            <Link to="" className="navbar-brand" onClick={toggleHome}>
-              <img src={FooterLogo} alt="" className="img-fluid" />
-            </Link>
-          </div>
-
-          <div className="col-sm-4 text-center">
+          {/* <div className="col-md-4 col-sm-3 text-center">
             <ul className="footer-icon">
               {SocialLinks.map((item, index) => {
                 const { icon, link } = item;
@@ -46,9 +46,10 @@ const Footer = () => {
                 );
               })}
             </ul>
-          </div>
+          </div> */}
         </div>
         <hr />
+
         <p className="text-center mb-2">
           Copyright &copy; All Right Reserved{" "}
           <span>LMiTS Solutions Pvt Ltd. {year} </span>

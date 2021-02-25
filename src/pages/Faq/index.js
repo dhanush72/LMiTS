@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FAQ from "./FAQ";
-import Layout2 from "../../Layouts/Layout2";
 
 const Faq = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
-    <Layout2>
+    <>
       <FAQ />
-    </Layout2>
+    </>
   );
 };
 

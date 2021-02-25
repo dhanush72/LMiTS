@@ -5,7 +5,7 @@ const FaqBody = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div className="accordian">
+    <div className="accordian mb-5">
       <div className="accordian__item">
         <div
           className="accordian-header"
